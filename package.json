@@ -1,0 +1,30 @@
+{
+  "title": "KodiCast",
+  "name": "kodicast",
+  "version": "0.0.1",
+  "description": "basic addon to send url to kodi server",
+  "main": "index.js",
+  "author": "glen lomax",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "preferences": [{
+        "name": "servadress",
+        "title": "The IP of the KODI server",
+        "description": "Put the IP adress of the KODI server you wish to cast to",
+        "type": "string",
+        "value": "127.0.0.1"
+    },
+    {
+        "description": "Put the port of the multimedia receiver",
+        "name": "servport",
+        "type": "integer",
+        "value": 8282,
+        "title": "Which port ?"
+    }]
+}
